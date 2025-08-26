@@ -1,6 +1,6 @@
 import requests, os, datetime
 from sqlalchemy.orm import Session
-import models
+from app import models
 import requests
 from typing import Optional
 
