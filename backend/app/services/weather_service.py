@@ -4,7 +4,7 @@ import models
 import requests
 from typing import Optional
 
-API_KEY = os.getenv("OPENWEATHER_API_KEY", "64ce41589d498c36aec9ccbf789d0da7")
+API_KEY = os.getenv("OPENWEATHER_API_KEY")
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
 
 def get_weather(city: str, state: Optional[str], db: Session):

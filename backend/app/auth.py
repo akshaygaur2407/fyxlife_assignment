@@ -3,13 +3,13 @@ from google.oauth2 import id_token
 from google.auth.transport import requests
 from sqlalchemy.orm import Session
 import models
+import os
 from database import get_db
 
-GOOGLE_CLIENT_ID = "96513746160-2621oi856tsu3kvd9ipqvn19d1pmumuk.apps.googleusercontent.com"
 
 def verify_google_token(token: str, db: Session):
     try:
-        idinfo = id_token.verify_oauth2_token(token, requests.Request(), GOOGLE_CLIENT_ID)
+        idinfo = id_token.verify_oauth2_token(token, requests.Request(), os.getenv("GOOGLE_CLIENT_ID"))
 
         user = db.query(models.User).filter(models.User.email == idinfo["email"]).first()
         if not user:
