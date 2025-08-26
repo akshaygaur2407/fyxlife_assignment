@@ -50,7 +50,7 @@ function Dashboard() {
       try {
         const user = JSON.parse(localStorage.getItem("user"));
         const res = await axios.get(
-          `http://localhost:8000/users/${user.id}/preferences`
+          `https://fyxlife-assignment.onrender.com/users/${user.id}/preferences`
         );
 
         const mappedData = res.data.preferences.map((pref) => ({
@@ -77,7 +77,7 @@ function Dashboard() {
     ) {
       try {
         const weatherRes = await axios.get(
-          `http://localhost:8000/weather/${selectedCity.name}/${selectedCity.stateCode}`
+          `https://fyxlife-assignment.onrender.com/weather/${selectedCity.name}/${selectedCity.stateCode}`
         );
 
         const newCity = {
@@ -110,7 +110,7 @@ function Dashboard() {
     try {
       const user = JSON.parse(localStorage.getItem("user"));
       const res = await axios.put(
-        `http://localhost:8000/users/${user.id}/cities/`,
+        `https://fyxlife-assignment.onrender.com/users/${user.id}/cities/`,
         weatherData.map((w) => ({
           city: w.city,
           state: w.stateCode,

@@ -38,7 +38,7 @@ function Login() {
 
   const handleCredentialResponse = async (response) => {
     try {
-      const res = await axios.post("http://localhost:8000/auth/google", {
+      const res = await axios.post("https://fyxlife-assignment.onrender.com/auth/google", {
         token: response.credential,
       });
 
