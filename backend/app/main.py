@@ -3,7 +3,7 @@ import uvicorn
 from fastapi import FastAPI
 from app.database import Base, engine
 from fastapi.middleware.cors import CORSMiddleware
-from routers import users, cities, weather, auth
+from app.routers import users, cities, weather, auth
 
 # Create tables
 Base.metadata.create_all(bind=engine)
