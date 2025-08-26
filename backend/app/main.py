@@ -1,7 +1,7 @@
 import os
 import uvicorn
 from fastapi import FastAPI
-from database import Base, engine
+from app.database import Base, engine
 from fastapi.middleware.cors import CORSMiddleware
 from routers import users, cities, weather, auth
 
