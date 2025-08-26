@@ -3,7 +3,8 @@ from sqlalchemy.orm import Session
 from app.database import get_db
 from app import models
 
-from services.weather_service import get_weather
+from app.services.weather_service import get_weather
+
 router = APIRouter(prefix="/users", tags=["users"])
 
 @router.get("/{user_id}/preferences")
