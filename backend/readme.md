@@ -33,27 +33,35 @@ This is the backend for **Weatherly**, a personal weather dashboard built with F
 ```bash
 git clone https://github.com/akshaygaur2407/fyxlife_assignment.git
 cd fyxlife_assignment/backend
+```
 
 2. **Create and activate a virtual environment:**
-
+```bash
 python -m venv venv
 source venv/bin/activate   # Linux / macOS
 venv\Scripts\activate     
+```
 
 3. **Install dependencies:**
+```bash
 pip install -r requirements.txt
+```
 
 4. **Create a .env file in the backend/ folder with the following variables:**
+```bash
 OPENWEATHER_API_KEY=YOUR_OPENWEATHER_API_KEY
 GOOGLE_CLIENT_ID=YOUR_GOOGLE_CLIENT_ID
-DATABASE_URL=sqlite:///./fyxlife.db   # or your production DB URL
+DATABASE_URL=sqlite:///./fyxlife.db 
+```
 
 5. **Run database migrations / create tables:**
-
+```bash
 python -c "from database import Base, engine; Base.metadata.create_all(bind=engine)"
 
+```
 
-6. **Start the FastAPI server (development): **
+6. **Start the FastAPI server (development):**
+```bash
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
-
+```
 

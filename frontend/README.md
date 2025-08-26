@@ -29,19 +29,22 @@ This is the frontend for **Weatherly**, a personal weather dashboard built with 
 ---
 
 ## ⚡ Setup Instructions
-
 1. **Clone the repository:**
-
 ```bash
 git clone https://github.com/akshaygaur2407/fyxlife_assignment.git
 cd fyxlife_assignment/frontend
+```
 
 2. **Install dependencies:**
 ```bash
 npm install
-
+```
 3. Create .env file in frontend/ with the following variables:
+```bash
 REACT_APP_GOOGLE_CLIENT_ID=YOUR_GOOGLE_CLIENT_ID
+```
 
 4. Start the development server:
+```bash
 npm start
+```
