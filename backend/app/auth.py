@@ -2,7 +2,7 @@ from fastapi import Depends, HTTPException
 from google.oauth2 import id_token
 from google.auth.transport import requests
 from sqlalchemy.orm import Session
-import models
+from app import models
 import os
 
 
