@@ -16,7 +16,7 @@ def get_weather(city: str, state: Optional[str], db: Session):
         models.WeatherCache.state == state
     ).first()
 
-    if cached and (datetime.datetime.utcnow() - cached.last_updated).seconds < 600:
+    if cached and (datetime.datetime.utcnow() - cached.last_updated).seconds < 3600:
         return {"city": cached.city, "state": cached.state, "data": cached.data, "cached": True}
 
     # 2. Call API

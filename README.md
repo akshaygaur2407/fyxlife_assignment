@@ -15,19 +15,6 @@ The project is divided into two parts:
 - Responsive design for desktop & mobile
 - Caching to minimize API calls
 
----
-
-## 📂 Project Structure
-fyxlife_assignment/
-│
-├── frontend/ # React-based frontend
-│ └── README.md
-│
-├── backend/ # FastAPI backend
-│ └── README.md
-│
-└── README.md # Global project overview (this file)
-
 
 ---
 
@@ -40,11 +27,12 @@ fyxlife_assignment/
 4. **Weather API** → OpenWeatherMap is used for fetching live data.  
 5. **Database** → Used for storing user preferences and cached weather data.  
 6. **Deployment** →  
-   - Frontend hosted separately (e.g., Vercel/Netlify).  
-   - Backend deployed (e.g., Render).  
+   - Frontend hosted separately (e.g., Vercel).  
+   - Backend deployed (Render).  
 7. **Scope** → The app demonstrates functionality & integration.  
    - It is **not production-grade** (missing security hardening, rate limiting, JWTs, etc.).  
-
+8. **Cache Time** → Each city will be cached for 1 hour  
+9. **Data Source** → All weather data is fetched from the [OpenWeatherMap API](https://openweathermap.org/api)  
 ---
 
 ## ⚡ Setup
@@ -59,10 +47,5 @@ Each part (frontend & backend) has its own setup instructions:
 - Expand support beyond Indian cities  
 - Improve error handling & offline caching  
 - Allow more customization for users  
-
----
-
-## 🕒 Time Spent
-Approx. **X hours** (replace with your actual time).
 
 ---
