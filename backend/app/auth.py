@@ -4,7 +4,6 @@ from google.auth.transport import requests
 from sqlalchemy.orm import Session
 import models
 import os
-from database import get_db
 
 
 def verify_google_token(token: str, db: Session):
