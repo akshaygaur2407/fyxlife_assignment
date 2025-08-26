@@ -26,6 +26,7 @@ function Login() {
             theme: "filled_blue",
             size: "large",
             shape: "pill",
+            width: "200",
           });
         }
       }
@@ -60,7 +61,7 @@ function Login() {
           Sign in to access your personalized weather dashboard
         </p>
         {/* Use ref instead of direct id */}
-        <div ref={googleButtonRef} style={{ marginTop: "30px" }}></div>
+        <div ref={googleButtonRef} style={{ marginTop: "30px" , display: "flex", justifyContent: "center" }}></div>
       </div>
     </div>
   );
