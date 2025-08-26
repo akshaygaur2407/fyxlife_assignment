@@ -13,7 +13,7 @@ app = FastAPI()
 
 origins = [
     "http://localhost:3000",
-    "https://fyxlife-assignment.onrender.com"
+    "https://fyxlife-assignment.vercel.app"
     # add your deployed frontend URL here later
 ]
 
