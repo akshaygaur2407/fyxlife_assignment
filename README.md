@@ -4,7 +4,7 @@ A full-stack weather dashboard application built as part of the Fyxlife assignme
 The project is divided into two parts:
 
 - **Frontend** → React app for user interface. ([Readme here](./frontend/README.md))
-- **Backend** → FastAPI service with database and weather API integration. ([Readme here](./backend/README.md))
+- **Backend** → FastAPI service with database and weather API integration. ([Readme here](./backend/readme.md))
 
 ---
 
@@ -38,7 +38,7 @@ The project is divided into two parts:
 ## ⚡ Setup
 Each part (frontend & backend) has its own setup instructions:  
 - [Frontend setup](./frontend/README.md)  
-- [Backend setup](./backend/README.md)  
+- [Backend setup](./backend/readme.md)  
 
 ---
 
